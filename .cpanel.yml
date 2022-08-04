@@ -2,6 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/uby/u9bot_main/
-    - passenger_wsgi.py $DEPLOYPATH
+    - export DEPLOYPATHFROM=/home/uby/u9bot_main/
+    - /bin/cp -R ${DEPLOYPATHFROM} ${DEPLOYPATH}
     #Add /<sub_folder> if required
     # use - /bin/cp -R images $DEPLOYPATH  to copy images folder
