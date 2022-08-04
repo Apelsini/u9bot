@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/uby/u9bot/
+    - passenger_wsgi.py $DEPLOYPATH
+    - README.md $DEPLOYPATH
+    - .cpanel.yml $DEPLOYPATH
+    #Add /<sub_folder> if required
+    # use - /bin/cp -R images $DEPLOYPATH  to copy images folder
