@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/uby/u9bot_main/
+    - export DEPLOYPATH=/home/uby/u9bot_main
     - /bin/c README.md $DEPLOYPATH
     - /bin/c passenger_wsgi.py $DEPLOYPATH
