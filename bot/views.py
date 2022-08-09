@@ -11,5 +11,8 @@ def c19(request): # this view gets vaccination rate about Belarus from Our world
     text = url.text
     data = json.loads(text)
     country = data[19] #Belarus is no 19 in the Our World in Data list
+    outstring = country['data']
+    str1 = outstring.replace("{", "[")
+    str2 = outstring.replace("}", "]")
     return HttpResponse(country['data'])
 # Create your views here.
