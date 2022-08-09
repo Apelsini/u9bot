@@ -5,4 +5,5 @@ deployment:
     - /bin/cp README.md $DEPLOYPATH
     - /bin/cp passenger_wsgi.py $DEPLOYPATH
     - /bin/cp manage.py $DEPLOYPATH
-    - /bin/cp -r /home/uby/u9bot/u9botpr/* /home/uby/u9bot_main/u9botpr/*
+    - /bin/cp -r /home/uby/u9bot/u9botpr/* /home/uby/u9bot_main/u9botpr/
+    - /bin/cp -r /home/uby/u9bot/bot/* /home/uby/u9bot_main/bot/
