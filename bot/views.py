@@ -11,5 +11,5 @@ def c19(request):
     text = url.text
     data = json.loads(text)
     country = data[17]
-    return HttpResponse(country)
+    return HttpResponse(country['country'])
 # Create your views here.
