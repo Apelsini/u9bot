@@ -5,4 +5,6 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Hello, world. You're at the bot index. Checking the change in the message")
 
+def c19(request):
+    return HttpResponse("covid19 json will be here")
 # Create your views here.
