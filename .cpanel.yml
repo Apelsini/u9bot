@@ -2,8 +2,15 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/uby/u9bot_main/
+    - export BOTTO=/home/uby/u9bot_main/bot
     - /bin/cp README.md $DEPLOYPATH
     - /bin/cp passenger_wsgi.py $DEPLOYPATH
     - /bin/cp manage.py $DEPLOYPATH
+    - /bin/cp /home/uby/u9bot/bot/admin.py $BOTTO
+    - /bin/cp /home/uby/u9bot/bot/apps.py $BOTTO
+    - /bin/cp /home/uby/u9bot/bot/models.py $BOTTO
+    - /bin/cp /home/uby/u9bot/bot/tests.py $BOTTO
+    - /bin/cp /home/uby/u9bot/bot/urls.py $BOTTO
+    - /bin/cp /home/uby/u9bot/bot/views.py $BOTTO
     - /bin/cp -r /home/uby/u9bot/u9botpr/* /home/uby/u9bot_main/u9botpr/
     - /bin/cp -r /home/uby/u9bot/bot/* /home/uby/u9bot_main/bot/
