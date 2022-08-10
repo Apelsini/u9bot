@@ -26,7 +26,7 @@ def c19cd(request):
     # Get some results for the UK:
     print("\nMost recent 10 global_and_us for Belarus:")
     results = (
-        stats.find({"country": "Belarus", "state": None})
+        stats.find({"country": "United Kingdom", "state": None})
         .sort("date", pymongo.DESCENDING)
         .limit(10)
     )
