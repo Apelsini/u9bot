@@ -1,14 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.views import generic
 import requests, json
 import pymongo  #this is for c19cd view
 from pymongo import MongoClient
+from bot.models import Clickboard
 
 EARTH_RADIUS = 6371.0  #c19cd
 MDB_URL = "mongodb+srv://readonly:readonly@covid-19.hip2i.mongodb.net/covid19" #c19cd source
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the bot index. Checking the change in the message")
+class IndexView(generic.ListView):    #Class-Based View
+    template_name = 'bot/index.html'
+    model = Clickboard
+    context_object_name = 'clickboards_list'
 
 def c19(request): # this view gets vaccination rate about Belarus from Our world in data
     url = requests.get("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.json")
