@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bot.apps.BotConfig',
+    'u9botpr.apps.BotConfig',
 ]
 
 MIDDLEWARE = [
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'u9bot.wsgi.application'
+WSGI_APPLICATION = 'u9botpr.wsgi.application'
 
 
 # Database
