@@ -1,10 +1,9 @@
-from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import generic
 import requests, json
 import pymongo  #this is for c19cd view
 from pymongo import MongoClient
-from bot.models import Clickboard
+from u9botpr.bot.models import Clickboard
 
 EARTH_RADIUS = 6371.0  #c19cd
 MDB_URL = "mongodb+srv://readonly:readonly@covid-19.hip2i.mongodb.net/covid19" #c19cd source
