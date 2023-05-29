@@ -14,3 +14,4 @@ deployment:
     - /bin/cp /home/uby/u9bot/bot/views.py $BOTTO
     - /bin/cp -r /home/uby/u9bot/u9botpr/* /home/uby/u9bot_main/u9botpr/
     - /bin/cp -r /home/uby/u9bot/bot/* /home/uby/u9bot_main/bot/
+    - /bin/cp -r /home/uby/u9bot/* /home/uby/u9bot_main/
