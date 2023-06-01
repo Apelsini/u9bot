@@ -12,7 +12,7 @@ class ClickboardForm(forms.ModelForm):
         # specify fields to be used
         fields = [
             # don't forget to add "author"
-            "create_date",
+            #"create_date",
             "name",
             "commands",
         ]
