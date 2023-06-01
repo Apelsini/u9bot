@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'u9botpr.apps.BotConfig',
+    'bot.apps.BotConfig',
 ]
 
 MIDDLEWARE = [
